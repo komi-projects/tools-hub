@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komi Systems — Free SaaS Tools for Founders</title>
+    <meta name="description" content="50+ free tools for SaaS founders: churn calculators, payment recovery analyzers, dunning sequence generators, SEO tools, and more. No signup required.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #f8fafc;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #e2e8f0;
+            margin: 0 4px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #1a1a2e;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 48px;
+        }
+        .tool-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .tool-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .tool-card .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+        .tag-payment { background: #dbeafe; color: #1e40af; }
+        .tag-seo { background: #dcfce7; color: #166534; }
+        .tag-analytics { background: #fef3c7; color: #92400e; }
+        .tag-calculator { background: #fce7f3; color: #9d174d; }
+        .tag-generator { background: #e0e7ff; color: #3730a3; }
+        .tag-service { background: #f3e8ff; color: #6b21a8; }
+        .tool-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+        }
+        .tool-card p {
+            font-size: 0.9rem;
+            color: #64748b;
+            line-height: 1.5;
+        }
+        .cta-section {
+            background: white;
+            border-radius: 16px;
+            padding: 48px;
+            text-align: center;
+            margin: 48px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .cta-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+        .cta-section p {
+            color: #64748b;
+            margin-bottom: 24px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover { transform: translateY(-2px); }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        footer a { color: #667eea; text-decoration: none; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .tools-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Komi Systems</h1>
+        <p>Free tools and resources for SaaS founders. Built in public. No signup required.</p>
+        <div>
+            <span class="badge">50+ Tools</span>
+            <span class="badge">100% Free</span>
+            <span class="badge">Open Source</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">🚀 Featured</h2>
+        <div class="tools-grid">
+            <a href="https://komi-projects.github.io/simple-recover-landing/" class="tool-card">
+                <span class="tag tag-service">Service</span>
+                <h3>SimpleRecover</h3>
+                <p>Payment recovery tool for Stripe. Automated dunning sequences, smart retries, and real-time dashboard.</p>
+            </a>
+            <a href="https://komi-projects.github.io/stripe-audit-service/" class="tool-card">
+                <span class="tag tag-service">Service</span>
+                <h3>Stripe Payment Recovery Audit</h3>
+                <p>Professional audit of your Stripe account. Find revenue you're losing to failed payments. $197 one-time.</p>
+            </a>
+            <a href="https://komi-projects.github.io/churn-calculator/" class="tool-card">
+                <span class="tag tag-calculator">Calculator</span>
+                <h3>SaaS Churn Calculator</h3>
+                <p>Calculate your annual churn cost. See how much revenue you're losing and what's recoverable.</p>
+            </a>
+        </div>
+
+        <h2 class="section-title">💳 Payment & Recovery Tools</h2>
+        <div class="tools-grid">
+            <a href="https://komi-projects.github.io/saas-micro-tools/stripe-failure-debugger.html" class="tool-card">
+                <span class="tag tag-payment">Payment</span>
+                <h3>Stripe Failure Debugger</h3>
+                <p>24 Stripe error codes with recovery guidance. Lookup any failure reason and get the fix.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/dunning-email-generator.html" class="tool-card">
+                <span class="tag tag-generator">Generator</span>
+                <h3>Dunning Email Generator</h3>
+                <p>Generate recovery emails by tone and customer segment. Copy-paste ready templates.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/dunning-sequence-planner.html" class="tool-card">
+                <span class="tag tag-payment">Payment</span>
+                <h3>Dunning Sequence Planner</h3>
+                <p>Visual timeline builder with 3 presets. Plan your recovery sequence in minutes.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/mrr-at-risk-dashboard.html" class="tool-card">
+                <span class="tag tag-analytics">Analytics</span>
+                <h3>MRR At-Risk Dashboard</h3>
+                <p>CSS gauges with 30/60/90 day projections. Visualize your revenue risk.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/revenue-recovery-calculator.html" class="tool-card">
+                <span class="tag tag-calculator">Calculator</span>
+                <h3>Revenue Recovery Calculator</h3>
+                <p>Estimate how much revenue you can recover with better dunning sequences.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/churn-risk-scorer.html" class="tool-card">
+                <span class="tag tag-analytics">Analytics</span>
+                <h3>Churn Risk Scorer</h3>
+                <p>Score customers by payment history, engagement, and plan value.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/recovery-notification-templates.html" class="tool-card">
+                <span class="tag tag-generator">Generator</span>
+                <h3>Recovery Notification Templates</h3>
+                <p>Email and SMS notification mockups with toggles. Styled and ready to use.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/failed-payment-analyzer.html" class="tool-card">
+                <span class="tag tag-analytics">Analytics</span>
+                <h3>Failed Payment Analyzer</h3>
+                <p>Upload your failed payment data and get insights on patterns and recovery potential.</p>
+            </a>
+        </div>
+
+        <h2 class="section-title">🔧 SEO & Technical Tools</h2>
+        <div class="tools-grid">
+            <a href="https://komi-projects.github.io/saas-micro-tools/seo-meta-generator.html" class="tool-card">
+                <span class="tag tag-seo">SEO</span>
+                <h3>SEO Meta Generator</h3>
+                <p>Generate title tags, meta descriptions, and Open Graph tags for any page.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/sitemap-generator.html" class="tool-card">
+                <span class="tag tag-seo">SEO</span>
+                <h3>Sitemap Generator</h3>
+                <p>Generate XML sitemaps from a list of URLs. Priority and changefreq included.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/jsonld-generator.html" class="tool-card">
+                <span class="tag tag-seo">SEO</span>
+                <h3>JSON-LD Generator</h3>
+                <p>Generate structured data markup for SaaS products, FAQs, and organizations.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/og-preview.html" class="tool-card">
+                <span class="tag tag-seo">SEO</span>
+                <h3>OG Preview Tool</h3>
+                <p>Preview how your link will look on Twitter, LinkedIn, and Facebook before posting.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/slug-optimizer.html" class="tool-card">
+                <span class="tag tag-seo">SEO</span>
+                <h3>Slug Optimizer</h3>
+                <p>Clean and optimize URL slugs for SEO. Remove stop words, standardize format.</p>
+            </a>
+        </div>
+
+        <h2 class="section-title">📊 Analytics & Calculators</h2>
+        <div class="tools-grid">
+            <a href="https://komi-projects.github.io/saas-micro-tools/revenue-impact-calculator.html" class="tool-card">
+                <span class="tag tag-calculator">Calculator</span>
+                <h3>Revenue Impact Calculator</h3>
+                <p>Model how pricing changes, churn reduction, and ARPU growth affect your MRR.</p>
+            </a>
+            <a href="https://komi-projects.github.io/saas-micro-tools/churn-risk-alert-simulator.html" class="tool-card">
+                <span class="tag tag-analytics">Analytics</span>
+                <h3>Churn Risk Alert Simulator</h3>
+                <p>Simulate risk gauges and Slack alert mockups for your team.</p>
+            </a>
+        </div>
+
+        <div class="cta-section">
+            <h2>Need More?</h2>
+            <p>All tools are open source. New tools added weekly. Follow the build on Nostr or check back for updates.</p>
+            <a href="https://komi-projects.github.io/simple-recover-landing/" class="cta-btn">Explore SimpleRecover →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built by <a href="https://github.com/komi-projects">Komi Systems</a> • All tools free forever • <a href="mailto:komi54666@gmail.com">Contact</a></p>
+    </footer>
+</body>
+</html>
